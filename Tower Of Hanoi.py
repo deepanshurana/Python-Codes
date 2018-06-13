@@ -1,11 +1,12 @@
 #towerofhanoi : 3 towers (source,auxiliary and destination)
 
-'''Algorithm:
-1. Move n-1 disks from s to a tower.
-2. Move the nth disk from s to d tower.
-3. move n-1 disks from a to d tower'''
+def toh(n, source, destination, spare):
+    if n == 1:
+        print("Disk 1 Moved From Tower",source,"To Tower",destination)
+        return
+    toh(n-1,source,spare,destination)
+    print("Disk",n,"Moved From Tower",source,"To Tower",destination)
+    toh(n-1,spare, destination, source)
 
-
-def toh(n,s,a,d)
-
-toh(disks =4)
+n = int(input("Enter the total Disks: "))
+toh(n,'A','C','B')
