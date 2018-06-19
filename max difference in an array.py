@@ -1,5 +1,3 @@
-
-print('''SOLUTION FOR QUESTION 1''')
 print('--'* 50)
 
 list = []   #initialising list
