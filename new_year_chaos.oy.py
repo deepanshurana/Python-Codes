@@ -15,15 +15,15 @@ def minimumBribes(q):
             print("Too chaotic")
             return
     # now we have to check the number of bribes count, we can use bubble sort
-    for i in range(len(q)-1):
+    for i in range(len(q)-1): # just keep sure that this loop index doesn't get out of bounds.
         for j in range(len(q)-1):
             if q[j] > q[j+1]:
                 q[j], q[j+1] = q[j+1], q[j]
                 res += 1
                 swaped = True
-        if swaped:
+        if swaped:  # so that swaped element doesn't get swapped again.
             swaped = False
         else:
-            break
+            break  # break after the last element operation has been done!
     print(res)
     return 
