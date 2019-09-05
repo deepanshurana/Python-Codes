@@ -1,4 +1,4 @@
-#===PROGRAM TO CONVERT TIME===
+
 def timeConversion(s):
     hour = s[:2]    # to check for first two elements
     period = s[-2:] #check last two elements 
@@ -10,7 +10,7 @@ def timeConversion(s):
     else:
         if(period == 'AM'):  
             if(hour  == '12'):
-                return ('00'+ s[2:-2])  
+                return ('00'+ s[2:-2])   # string split implementation successful, return in 00 hour format.
             else:
                 return s[:-2]
         else:
