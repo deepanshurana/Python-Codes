@@ -63,7 +63,7 @@ testPatterns5 = ['s[sd]+']  # s followed by one or more s and ds.
 multiReFind(testPatterns5, testPhrase)
 
 testPhrase2 = "This is a string! But it has punctuation. How can we remove it?"
-testPattern6 = ['[^?.!]+']  # ^-> exclude terms. use "+" always.
+testPattern6 = ['[^?.!]+']  # ^-> exclude terms. use "+" for one or more occurance.
 multiReFind(testPattern6, testPhrase2)
 
 testPatterns7 = ['[a-z]+']  # to fetch all lowercase letters.(string)
