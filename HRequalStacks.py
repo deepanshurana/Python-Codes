@@ -44,12 +44,11 @@ def equalStacks(h1, h2, h3):
     return t 
     
 def main():
-a = [3, 2, 1, 1, 1]
-b = [4, 3, 2]
-c = [1, 1, 4, 1]
-t = equalStacks(h1, h2, h3)
-print(t)
-
+    a = [3, 2, 1, 1, 1]
+    b = [4, 3, 2]
+    c = [1, 1, 4, 1]
+    t = equalStacks(h1, h2, h3)
+    print(t)
 if __name__ == "__main__":
-  main()
+    main()
 
